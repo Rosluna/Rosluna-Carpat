@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Назва твого сайту</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Назва сайту -->
+    <h1 class="site-title">НАЗВА ТВОГО САЙТУ</h1>
+
+    <!-- Фото товару -->
+    <img src="твоя-картинка.jpg" alt="БАДи з Карпат" class="product-img">
+
+    <!-- Опис товару -->
+    <div class="description">
+      Тут ти можеш вставити свій опис бадів. Наприклад: натуральні БАДи з карпатських рослин для підтримки імунітету.
+    </div>
+
+    <!-- Кнопка "Замовити" -->
+    <button class="order-btn" id="orderBtn">Замовити</button>
+  </div>
+
+  <!-- Popup форма -->
+  <div class="popup" id="orderPopup">
+    <div class="popup-content">
+      <span class="close-btn" id="closePopup">&times;</span>
+      <h2>Замовлення БАДів</h2>
+      <input type="text" id="name" placeholder="Ваше ім’я" required>
+      <input type="tel" id="phone" placeholder="Телефон" required>
+      <input type="text" id="city" placeholder="Місто та область" required>
+      <input type="text" id="postal" placeholder="Поштовий індекс" required>
+      <button id="sendBtn">Надіслати</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
